@@ -8,7 +8,7 @@ const _=require("lodash");
 const app1=express();
 app1.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-yug:Spartans9090%40@cluster0.qjntsn9.mongodb.net/todolistDB");
+mongoose.connect("mongodb://127.0.0.1/todolistDB");
 
 const itemsSchema=new mongoose.Schema({
     name:String
